@@ -1,11 +1,44 @@
+/* https://www.fontsquirrel.com/fonts/didact-gothic */
+
+
+// @font-face { 
+//   font-family: 'didact gothic';
+//   src: url('./assets/fonts/didact-gothic-regular.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal; 
+// }
+
+
+/* https://www.fontsquirrel.com/fonts/mitr */
+
+@font-face {
+  font-family: 'mitr';
+  src: url('./assets/fonts/mitr-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'mitr';
+  src: url('./assets/fonts/mitr-regular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 :root {
   /* colours */
+  --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
-  --bg:  rgb(52, 73, 94);
+  --offwhite: rgb(228, 228, 226);
+  --bg: rgb(97,69,106);
+  --bg-light: rgb(120, 83, 132);
+  --primary: rgb(202, 171, 215);
+  --secondary: rgb(153, 153, 153);
 
   /* fonts */
-  --font-main: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --font-main: 'mitr', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -23,12 +56,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  min-height: 100vh;
   margin: 0;
   overflow: hidden;
 }
 
-.btn {}
+.btn {
+  font-size: 1.25em;
+
+}
   
 .game-container {
   padding: 20px 30px;
@@ -39,19 +75,5 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // border: 2px solid yellow;
   gap: 2rem;
 }
-  
-
-
-// ----------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-// h1 {
-//   margin: 20px 0 0;
-//   border: 2px solid white;
-//   text-align: center;
-// }

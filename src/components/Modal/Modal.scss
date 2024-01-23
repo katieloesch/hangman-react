@@ -13,29 +13,52 @@
 
 
     .modal {
-        background: #2980b9;
+        background: var(--white);
         border-radius: 5px;
         box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
         padding: 20px;
         text-align: center;
+        color: var(--bg);
+
+     
                     
 
         #message {
+            font-size: 2em;
+            margin-bottom: -20px;
 
         }
 
+        img {
+            height: 13em;
+            margin: 2em 4em;
+        }
+
+
         #word-reveal {
+            font-size: 1.4em;
+
+            span {
+                color: var(--black);
+                font-weight: bold;
+            }
 
         }
 
         #btn-play-again {
-            cursor: pointer;
-            background-color: #fff;
-            color: #2980b9;
-            border: 0;
-            margin-top: 20px;
-            padding: 12px 20px;
-            font-size: 16px;
+            background-color: var(--bg);
+            color: var(--white);
+            border: none;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            padding: 5px 15px;
+            border-radius: 3px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: var(--bg-light);
+                transition: 0.4s;
+            }
         }
 
         #btn-play-again:active {

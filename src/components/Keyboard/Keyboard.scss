@@ -1,0 +1,46 @@
+.keyboard-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    max-width: 50%;
+
+    #btn-show-keys {
+        background-color: var(--bg);
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        border-radius: 3px;
+        padding: 2px 10px;
+        font-size: 1.1em;
+ 
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid var(--white);
+            color: var(--white);
+            transition: 0.4s;
+            
+        }
+    }
+
+    .btn-letter {
+
+        background-color: var(--bg);
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        padding: 0px 7px;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: var(--bg-light);
+            color: var(--white);
+            border: 1px solid var(--white);
+            cursor: pointer;
+        }
+
+
+
+        
+    }
+}
