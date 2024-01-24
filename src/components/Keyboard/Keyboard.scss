@@ -1,10 +1,14 @@
 .keyboard-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
-    max-width: 50%;
+    max-width: 60%;
+    margin-bottom: 10rem;
+
+    @media screen and (max-width: 1025px) {
+        max-width: 90%;
+    }
 
     #btn-show-keys {
         background-color: var(--bg);
@@ -31,12 +35,23 @@
         color: var(--primary);
         padding: 0px 7px;
         border-radius: 3px;
+        width: 1.75em;
 
         &:hover {
             background-color: var(--bg-light);
             color: var(--white);
             border: 1px solid var(--white);
             cursor: pointer;
+        }
+
+        &.faded {
+            border: 1px solid var(--bg-light);
+            color: var(--bg-light);
+
+            &:hover {
+                cursor: not-allowed;
+                background-color: var(--bg);
+            }
         }
 
 

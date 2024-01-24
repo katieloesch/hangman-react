@@ -10,7 +10,11 @@
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 
+    @media screen and (max-width: 1025px) {
+        align-items: flex-start;
+    }
 
     .modal {
         background: var(--white);
@@ -18,7 +22,16 @@
         box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
         padding: 20px;
         text-align: center;
-        color: var(--bg);
+        color: var(--black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 1025px) {
+            padding: 10px;
+            margin-top: 5em;
+        }
 
      
                     
@@ -27,19 +40,33 @@
             font-size: 2em;
             margin-bottom: -20px;
 
+            @media screen and (max-width: 415px) {
+                font-size: 1.5em;
+            }
+
         }
 
         img {
             height: 13em;
             margin: 2em 4em;
+
+            @media screen and (max-width: 415px) {
+               height: 8em;
+            }
         }
 
 
         #word-reveal {
             font-size: 1.4em;
+            max-width: 90%;
+            text-align: center;
+
+            @media screen and (max-width: 415px) {
+                font-size: 1.1em;
+            }
 
             span {
-                color: var(--black);
+                color: var(--bg);
                 font-weight: bold;
             }
 
@@ -53,6 +80,10 @@
             margin-bottom: 20px;
             padding: 5px 15px;
             border-radius: 3px;
+
+            @media screen and (max-width: 415px) {
+                font-size: 1em;
+            }
 
             &:hover {
                 cursor: pointer;

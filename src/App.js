@@ -8,6 +8,8 @@ import Hint from './components/Hint/Hint';
 import Keyboard from './components/Keyboard/Keyboard';
 import Modal from './components/Modal/Modal';
 import Notification from './components/Notification/Notification';
+import ContactIcons from './components/ContactIcons/ContactIcons';
+
 import { show } from './components/helper_functions/helper_functions';
 import { words } from './api/words';
 
@@ -68,6 +70,10 @@ function App() {
     selectedWord = words[random].word;
   }
 
+  const changeKeyStyle = function(key, style) {
+
+  }
+
   const handleKeyClick = function(key) {
 
     if (playable) {
@@ -75,7 +81,8 @@ function App() {
 
       if (selectedWord.includes(letter)) {
         if (!correctLetters.includes(letter)) {
-          setCorrectLetters(correctLetters => [...correctLetters, letter])
+          setCorrectLetters(correctLetters => [...correctLetters, letter]);
+          
         } else {
          show(setShowNotification)
         }
@@ -98,9 +105,10 @@ function App() {
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
         <WrongLetters wrongLetters={wrongLetters}/>
         <Hint setShowHint={setShowHint} showHint={showHint} selectedWord={selectedWord}/>
-        <Keyboard handleKeyClick={handleKeyClick} setShowKeys={setShowKeys} showKeys={showKeys}/>
-        
+        <Keyboard handleKeyClick={handleKeyClick} setShowKeys={setShowKeys} showKeys={showKeys} wrongLetters={wrongLetters} correctLetters={correctLetters}/>
+        <ContactIcons />
       </div>
+      
 
       <Modal correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
       <Notification showNotification={showNotification} />

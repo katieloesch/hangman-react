@@ -17,3 +17,11 @@ references
 - hangman svg
   - https://github.com/bradtraversy/vanillawebprojects/blob/master/hangman/index.html
   - https://github.com/bradtraversy/vanillawebprojects/blob/master/hangman/style.css
+
+External web resources:
+icons
+
+iconify
+https://iconify.design/
+fontawesome
+https://fontawesome.com/

@@ -35,6 +35,7 @@
   --bg: rgb(97,69,106);
   --bg-light: rgb(120, 83, 132);
   --primary: rgb(202, 171, 215);
+  --primary-a: rgba(202, 171, 215, 0.4);
   --secondary: rgb(153, 153, 153);
 
   /* fonts */
@@ -48,6 +49,7 @@
   font-family: var(--font-main);
   scroll-behavior: smooth;
   font-family: var(--font-main);
+  z-index: 1;
 }
   
 body {
@@ -58,7 +60,8 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  overflow: hidden;
+  // overflow: hidden;
+
 }
 
 .btn {
