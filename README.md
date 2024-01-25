@@ -15,19 +15,23 @@
 
 ## <a name="description"></a> 1. Description
 
-I started this project in order to refamiliarise with JavaScript and React.js after taking a break to learn some other programming languages. I wanted to build an online version of the Hangman game where the player tries to guess the letters of an unknown random word. If 6 guessed letters which do not appear in the word, the game is lost.
+<img src='./src/assets/images/startpage.jpg' alt='start page of game' width=400>
+<img src='./src/assets/images/game.jpg' alt='game' width=400>
+
+I started this project in order to refamiliarise with JavaScript and React.js after taking a break to learn some other programming languages. I wanted to build an online version of the Hangman game where the player tries to guess the letters of an unknown random word.
+
+The game is lost after 6 wrong guesses and won if all the letters of the random word are guessed correctly.
 
 As letters in the word are guessed If a letter not in the word is guess, draw a figure part for each incorrect letter guess.
 
-s a short dash for each letter of the word
+Each letter of the word is visually respresented with a dash when the player starts guessing which letters are in the word one at at a time.
 
-The player will guess guess which letters are in the word or phrase, one at a time.
-If the letter is part of the answer, the executioner writes it in each space that corresponds with the answer. If the letter is not in the answer, a body part of a stick figure is drawn attached to the scaffold.
+<img src='./src/assets/images/steps.jpg' alt='steps of stick figure appearing on screen'  width=500>
+
+If the player guesses a letter that is part of the answer, the letter appears above the corresponding dash. If the letter is not in the answer, a new body part of the stick figure is drawn attached to a scaffold.
+
 The stick figure appears hanging from a scaffold in 6 different parts: head, body, left leg, right leg, left arm, right arm.
-Keep guessing and adding body parts until the executioner wins by finishing the body or the guesser wins by completing the answer.
-
-Draw a blank line for each letter in the word.
-Fill the letter in the blanks if the players guess correctly. Whenever a player guesses a letter that is in the secret word, the host fills in the relevant blank.
+Keep guessing and adding body parts until the win by finishing the body or the guesser wins by completing the answer.
 
 Draw part of the hangman when the players guess wrong.
 
