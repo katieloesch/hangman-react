@@ -1,4 +1,5 @@
 {
+  "homepage": "http://hangman.katieloesch.co.uk",
   "name": "hangman-react",
   "version": "0.1.0",
   "private": true,
