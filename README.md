@@ -106,11 +106,11 @@ npx create-react-app .
 - Hostinger: provider used to host portfolio website
   - https://www.hostinger.co.uk
 
-### tutorials and resources:
+### Tutorials and resources:
 
-- https://www.youtube.com/watch?v=jj0W8tYX_q8
-- https://www.youtube.com/watch?v=-ONUyenGnWw&t=2s
-- https://www.youtube.com/watch?v=hSSdc8vKP1I
+- YouTube: [Build Hangman With React](https://www.youtube.com/watch?v=jj0W8tYX_q8) by [Traversy Media](https://www.youtube.com/@TraversyMedia)
+- YouTube: [This Is A Great Beginner React/TypeScript Project](https://www.youtube.com/watch?v=-ONUyenGnWw&t=2s) by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
+- Youtube: [Build A Hangman Game in HTML CSS and JavaScript | Hangman Game in HTML CSS and JavaScript]() by [CodingNepal](https://www.youtube.com/@CodingNepal)
 
 ## <a name="deliverables"></a> 5. Deliverables
 
@@ -167,7 +167,8 @@ This was a solo project I built over the course of 4 days.
 - create react app
 - components
 - wireframe
-  <img src="./src/assets/images/wireframe.jpg">
+
+<img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="500">
 
 ### Day 2 - 23/01/2024
 
