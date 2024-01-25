@@ -1,24 +1,25 @@
 .wrong-letters-container {
-
-    // position: absolute;
-    // top: 20px;
-    // right: 20px;
     display: flex;
     flex-direction: column;
-    text-align: right;
-
+    align-items: center;
+    justify-content: center;
+    
    .wrong-letters {
-        font-size: 1.3em;
+        font-size: 1.4rem;
         color: var(--primary);
+        text-align: center;
+
+        @media screen and (max-width: 300px) {
+            font-size: 1rem;
+        }
 
         p {
             margin: 0 0 5px;
+            text-align: center;
         }
+
         span {
-            
+            font-size: 1.4rem;
         }
    }
-
-
-
 }

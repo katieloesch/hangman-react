@@ -1,0 +1,63 @@
+
+/* fonts */
+
+@font-face { /* source: https://www.fontsquirrel.com/fonts/mitr */
+    font-family: 'mitr';
+    src: url('./assets/fonts/mitr-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face { /* source: https://www.fontsquirrel.com/fonts/mitr */
+    font-family: 'mitr';
+    src: url('./assets/fonts/mitr-regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+    
+
+/* variables */
+
+:root {
+    /* colours */
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --offwhite: rgb(228, 228, 226);
+    --bg: rgb(97,69,106);
+    --bg-light: rgb(120, 83, 132);
+    --primary: rgb(202, 171, 215);
+    --primary-a: rgba(202, 171, 215, 0.4);
+    --secondary: rgb(153, 153, 153);
+
+    /* fonts */
+    --font-main: 'mitr', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    scroll-behavior: smooth;
+    font-family: var(--font-main);
+    z-index: 1;
+  }
+    
+
+body {
+    background-color: var(--bg);
+    color: var(--white);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* border: 2px solid white; */
+}
+  
+.btn {
+    font-size: 1.25em;
+}

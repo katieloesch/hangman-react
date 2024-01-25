@@ -25,10 +25,6 @@ function App() {
   const [showHint, setShowHint] = useState(false)
   const [showKeys, setShowKeys] = useState(false)
 
-  console.log('selected word: ', selectedWord)
-
-
-
   useEffect(() => {
 
     const handleKeydown = e => {
@@ -70,9 +66,7 @@ function App() {
     selectedWord = words[random].word;
   }
 
-  const changeKeyStyle = function(key, style) {
 
-  }
 
   const handleKeyClick = function(key) {
 
@@ -98,7 +92,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className='app'>
       <Header />
       <div className='game-container'>
         <Figure wrongLetters={wrongLetters} />
@@ -106,15 +100,14 @@ function App() {
         <WrongLetters wrongLetters={wrongLetters}/>
         <Hint setShowHint={setShowHint} showHint={showHint} selectedWord={selectedWord}/>
         <Keyboard handleKeyClick={handleKeyClick} setShowKeys={setShowKeys} showKeys={showKeys} wrongLetters={wrongLetters} correctLetters={correctLetters}/>
-        <ContactIcons />
       </div>
       
-
+      <ContactIcons />
       <Modal correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
       <Notification showNotification={showNotification} />
     
       
-    </>
+    </div>
   );
 }
 

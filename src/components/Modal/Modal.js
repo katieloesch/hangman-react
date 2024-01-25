@@ -11,9 +11,9 @@ const Modal = ({ correctLetters, wrongLetters, selectedWord, setPlayable, playAg
   let gifAlt = '';
 
   let playable = true; 
-  let status = checkStatus(correctLetters, wrongLetters, selectedWord);
 
   if (checkStatus(correctLetters, wrongLetters, selectedWord) === 'win') {
+    
     message = 'Congrats!';
     gif = gifHappy;
     gifAlt = 'happy face'

@@ -5,6 +5,15 @@ day 1: 22/01/2024
 
 day 2: 23/01/2024
 
+- keyboard option in case user does not want to type
+- CSS
+
+day 3: 24/01/2024
+
+- add faded effect to keys already used
+- media queries for modal
+- contact icons to link to my github, portfolio, project code, linkedin, email
+
 - gifs source:
   https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblN2dkhHdVRxemFLT2JSZVFIN204MTllZ0xqd3xBQ3Jtc0tsb0FNRWU5eVZyU0xfdnlkN2dfNWFoT1dfRllDY0IyLVpGcTd1bTVQVjY1MWJBMGFZWTdER1JVV1Q0WGN0S2hIdzZqa2ptQnQ3T09rN1J2NTJ0REhfNFJsTm9zUkRiRlh5bEt3djNhb0tHaUlyY2lnWQ&q=https%3A%2F%2Fcodingnepalweb.com%2Fcustom-projects%2Fhangman-game-images.zip&v=hSSdc8vKP1I
 

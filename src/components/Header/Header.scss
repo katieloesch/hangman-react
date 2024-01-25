@@ -1,11 +1,22 @@
-.title-game {
-    margin: 20px 0;
+
+
+.header {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 2em;
+
+  .title-game {
     text-align: center;
     font-size: 2.5em;
+  }
+
+  .p-instructions {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--primary)
+  }
 }
 
-.p-instructions {
-  text-align: center;
-  font-size: 1.5em;
-  color: var(--primary)
-}

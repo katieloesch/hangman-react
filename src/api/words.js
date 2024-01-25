@@ -18,8 +18,12 @@ export const words = [
         hint: "An art form using colors on a surface to create images or expression."
     },
     {
-        word: "astronomy",
+        word: "serendipity",
         hint: "The scientific study of celestial objects and phenomena."
+    },
+    {
+        word: "astronomy",
+        hint: "The faculty or phenomenon of finding valuable or agreeable things not sought for."
     },
     {
         word: "football",
@@ -260,5 +264,29 @@ export const words = [
     {
         word: "brilliant",
         hint: "Exceptionally clever, talented, or impressive."
+    },
+    {
+        word: "cinema",
+        hint: "A theatre where films are shown for public entertainment."
+    },
+    {
+        word: "daisy",
+        hint: "A small flower with white petals and a yellow centre."
+    },
+    {
+        word: "award",
+        hint: "A prize or other mark of recognition given in honour of an achievement."
+    },
+    {
+        word: "machete",
+        hint: "A large knife with a wide blade."
+    },
+    {
+        word: "costume",
+        hint: "A set of clothes worn in order to look like someone or something else."
+    },
+    {
+        word: "ukulele",
+        hint: "A small four-stringed instrument."
     },
 ];

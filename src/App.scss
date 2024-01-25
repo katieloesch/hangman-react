@@ -1,82 +1,25 @@
-/* https://www.fontsquirrel.com/fonts/didact-gothic */
-
-
-// @font-face { 
-//   font-family: 'didact gothic';
-//   src: url('./assets/fonts/didact-gothic-regular.woff') format('woff');
-//   font-weight: normal;
-//   font-style: normal; 
-// }
-
-
-/* https://www.fontsquirrel.com/fonts/mitr */
-
-@font-face {
-  font-family: 'mitr';
-  src: url('./assets/fonts/mitr-light.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'mitr';
-  src: url('./assets/fonts/mitr-regular.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-
-:root {
-  /* colours */
-  --black: rgb(0, 0, 0);
-  --white: rgb(255, 255, 255);
-  --offwhite: rgb(228, 228, 226);
-  --bg: rgb(97,69,106);
-  --bg-light: rgb(120, 83, 132);
-  --primary: rgb(202, 171, 215);
-  --primary-a: rgba(202, 171, 215, 0.4);
-  --secondary: rgb(153, 153, 153);
-
-  /* fonts */
-  --font-main: 'mitr', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--font-main);
-  scroll-behavior: smooth;
-  font-family: var(--font-main);
-  z-index: 1;
-}
-  
-body {
-  background-color: var(--bg);
-  color: var(--white);
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  min-width: 100vw;
   min-height: 100vh;
-  margin: 0;
-  // overflow: hidden;
 
-}
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
 
-.btn {
-  font-size: 1.25em;
-
+    @media screen and (min-width: 1500px) {
+      gap: 2rem;
+    }
+  }
 }
   
-.game-container {
-  padding: 20px 30px;
-  position: relative;
-  margin: auto;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}

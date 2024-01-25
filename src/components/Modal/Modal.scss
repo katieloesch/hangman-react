@@ -6,7 +6,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    /* display: flex; */
     display: none;
     align-items: center;
     justify-content: center;
@@ -31,10 +30,7 @@
         @media screen and (max-width: 1025px) {
             padding: 10px;
             margin-top: 5em;
-        }
-
-     
-                    
+        }           
 
         #message {
             font-size: 2em;
@@ -55,7 +51,6 @@
             }
         }
 
-
         #word-reveal {
             font-size: 1.4em;
             max-width: 90%;
@@ -68,8 +63,8 @@
             span {
                 color: var(--bg);
                 font-weight: bold;
+                font-size: 1.55rem;
             }
-
         }
 
         #btn-play-again {
@@ -87,6 +82,7 @@
 
             &:hover {
                 cursor: pointer;
+                scale: 1.05;
                 background-color: var(--bg-light);
                 transition: 0.4s;
             }

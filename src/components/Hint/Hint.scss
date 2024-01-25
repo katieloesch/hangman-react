@@ -1,5 +1,5 @@
 .hint {
-
+    
     #btn-hint {
         background-color: var(--bg);
         border: 1px solid var(--primary);
@@ -7,7 +7,6 @@
         border-radius: 3px;
         padding: 2px 10px;
         font-size: 1.1em;
- 
 
         &:hover {
             cursor: pointer;
@@ -19,7 +18,11 @@
     }
 
     p {
-        color: var(--primary);
+        color: rgba(255, 255, 255, 0.75);
         font-size: 1.3em;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        padding-bottom: 10px;
     }
 }
