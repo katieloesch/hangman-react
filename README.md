@@ -15,70 +15,24 @@
 
 ## <a name="description"></a> 1. Description
 
-<img src='./src/assets/images/startpage.jpg' alt='start page of game' width=350><img src='./src/assets/images/game.jpg' alt='game' width=350>
+I started this project in order to refamiliarise with JavaScript and React.js after taking a break to learn some other programming languages. I wanted to build an online version of the Hangman game where a player tries to guess the letters of an unknown random word.
+Each letter of the word is visually respresented with a dash when the player starts guessing which letters are in the word, one at at a time.
+If the player guesses a letter that is part of the answer, the letter appears above the corresponding dash. If the letter is not in the answer, a new body part of a stick figure is drawn.
 
-I started this project in order to refamiliarise with JavaScript and React.js after taking a break to learn some other programming languages. I wanted to build an online version of the Hangman game where the player tries to guess the letters of an unknown random word.
+<img src='./src/assets/images/startpage.jpg' alt='start page of game' width=350> <img src='./src/assets/images/game.jpg' alt='game' width=350>
 
-The game is lost after 6 wrong guesses and won if all the letters of the random word are guessed correctly.
+For each incorrect guess, a new part of the Hangman figure, attached to a scaffold will appears on the screen. The stick figure show up in 6 different parts:
 
-As letters in the word are guessed If a letter not in the word is guess, draw a figure part for each incorrect letter guess.
-
-Each letter of the word is visually respresented with a dash when the player starts guessing which letters are in the word one at at a time.
+1. head
+2. body
+3. left arm
+4. right arm
+5. left leg
+6. right leg
 
 <img src='./src/assets/images/steps.jpg' alt='steps of stick figure appearing on screen'  width=600>
 
-If the player guesses a letter that is part of the answer, the letter appears above the corresponding dash. If the letter is not in the answer, a new body part of the stick figure is drawn attached to a scaffold.
-
-The stick figure appears hanging from a scaffold in 6 different parts: head, body, left leg, right leg, left arm, right arm.
-Keep guessing and adding body parts until the win by finishing the body or the guesser wins by completing the answer.
-
-Draw part of the hangman when the players guess wrong.
-
-Whenever a player guesses a letter that is not in the secret word, they get a strike that brings them closer to losing. To show this, the host draws a simple stick figure of a man being hung, adding a new part to the drawing with every wrong answer.
-
-“head”“body.”
-“arm.”
-arm.
-“leg.”
-leg.
-
-The players win when they guess the correct word. If the players get every letter of the word before the host finishes drawing then they win.
-
-If the host ends up drawing the entire hangman, the players lose and the game is over.
-
-The object of hangman is to guess the secret word before the stick figure is hung.
-
-Hangman is a popular word-guessing game. Here are the basic rules:
-
-1. **Objective**: One player (the host) thinks of a word, phrase, or sentence; the other players try to guess it by suggesting letters within a certain number of guesses.
-
-2. **Setup**:
-
-   - The host writes a series of blank spaces on a surface, each representing a letter in the word or phrase.
-   - The host may also provide some initial clues, such as the category of the word or phrase.
-
-3. **Gameplay**:
-
-   - Players take turns guessing letters.
-   - If a guessed letter appears in the word, the host writes it in all its correct positions.
-   - If the guessed letter does not appear in the word, the host draws one element of a hangman’s gallows and figure on a separate part of the board. This often starts with the gallows, followed by the head, body, arms, and legs of the hangman figure.
-
-4. **Rules for Guessing**:
-
-   - Players typically guess one letter at a time.
-   - If a player wants to guess the whole word or phrase, they usually do so on their turn. However, if they are wrong, it counts as a wrong guess with the usual consequences (e.g., drawing another part of the hangman).
-
-5. **Winning and Losing**:
-
-   - The guessing players win if they guess all the letters or the entire word/phrase correctly before the hangman is completely drawn.
-   - The host wins if the hangman is completed before the players can guess the word/phrase.
-
-6. **Variations**:
-   - The number of incorrect guesses allowed before the hangman is completed can vary.
-   - Some variations include additional elements like a stand or a rope in the drawing.
-   - The complexity of the words or phrases can be adjusted based on the age or skill level of the players.
-
-Hangman can be played with just a couple of people or in larger groups, making it a versatile and popular game for various settings.
+The game is won if all the letters of the random word are guessed correctly before the Hangman figure is finished i.e. with less than 6 wrong guesses. The game is lost after 6 wrong guesses at which point the Hangman figure is completed. The object of the game is to guess the secret word before the stick figure is hung.
 
 ## <a name="deployment-link"></a> 2. Deployment link
 
@@ -138,8 +92,15 @@ npx create-react-app .
   - used for launching the website and displaying the application Google Chrome
 - Google Chrome Developer Tools: For troubleshooting and debugging
   - https://www.google.com/intl/en_uk/chrome/
-- Hostinger: provider used to host portfolio website
+- Hostinger: provider used to host the game online
   - https://www.hostinger.co.uk
+- Excalidraw
+  - used for building the wireframe
+  - https://excalidraw.com/
+- chatGTP
+  - https://chat.openai.com/
+  - used to retrieve data for the api files (animals.js, cities.js and animals.js)
+  - source for remaining api (words.js): https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view
 
 ### Tutorials and resources:
 
@@ -158,82 +119,153 @@ npx create-react-app .
   - frequent commits dating back to the very beginning of the project
   - code that is well-formatted and well-commented
   - semantic markup for HTML and CSS while adhering to best practices
+  - adhere to KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
 
 - a Hangman game with the following features:
 
-  - pick a random word from a list of random words when the page loads
-  - visually display a dash for each letters of the random word
-  - if the player enters a letter that is in the random word, the dash should be replaced with the corresponding letter
+  - pick of a random word from a list of random words when the page loads
+  - visually display a dash for each letter of the random word
+  - if the player enters a letter that is in the random word, that letter should appear above the corresponding the dash or dashes.
   - if the player enters the same letter more than once they should be notified
-  - if the player guesses all the letters of the words with 5 or less incorrect guesses, display a message to let the player know they've won
-  - if the player makes 6 incorrect guesses display a message to let the player know they lost the game
-  - for each wrong guess a new part of a Hangman figure appears on the screen and the 6th wrong guess completes the figure
+  - if the player guesses all the letters of the words with 5 or less incorrect guesses, a message should be displayed to let the player know they've won
+  - if the player makes 6 incorrect guesses a message should be displayed to let the player know they lost the game
+  - for each wrong guess a new part of a Hangman figure should appear on the screen and the 6th wrong guess completes the figure
   - after winning or losing a game the player can start a new game by clicking a button
 
 - the website should also:
   - include contact information -> email, GitHub, Linkedin and other relevant links
-  - be mobile responsive
-  - adhere to KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
+  - have a mobile-responsive design
 
 ### Stretch Goals
 
-- option to display a hint
-- different categories for random word
+- option to display a hint about the unknown random word
+- different categories for random words
 - animations
 - sound effects
-- enable user to mute sound effects
+- score board to keep track of wins and losses
 
 ## <a name="planning"></a>6. Planning / Build Process
 
+This was a solo project I built over the course of 5 days.
+
 ### User Stories
 
+- As a user I should be able to start the game.
+- As a user I should see a number of dashes corresponding to the letters of the random word I'm trying to guess.
 - As a user I should be able to enter letters to guess a random word.
 - As a user I should be able to tell if my guess is correct or not.
-- As a user I should be able to tell I should be notified if I entered the same letter more than once.
-- As a user I should be able to tell if I've won the game or lost.
-- As a user I should be able to start a new game.
+- As a user I should see the correct letters guessed appear above the dashes on the screen.
+- As a user I should be able to see the incorrect letters I guessed appear on the screen separately from the correct letters.
+- As a user I should be be notified if I entered the same letter more than once to guess the same word.
+- As a user I should be able to tell if I've won the game or if I've lost.
+- As a user I should be able to start a new game after winning or losing a game.
+- As a user I should have the option to get a hint about the random word I'm trying to guess.
 - As a user I should be able to easily find contact information including email, linkedIn and GitHub accounts.
 - As a user I should be able to navigate the website from any device.
 
-This was a solo project I built over the course of 4 days.
-
 ### Day 1 - 22/01/2024
 
-- create react app
-- components
-- wireframe
+I started this project by setting up a react app using the 'create-react-app' command.
 
-<img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="500">
+```zsh
+npx create-react-app .
+```
+
+After removing unnecessary files from the newly created project, I made a 'components' folder to store all the different react components needed for the game.
+
+- header -> for the title and game instructions
+- figure -> for the hangman figure
+- hint -> for a hint about the random word that can be optionally displayed on the screen
+- modal -> to notify the player when they win or lose the game
+- notification -> to notify the player when they enter the same letter twice
+- wrong letters -> to display the wrong letters guessed
+- word -> to display the dashes and correct letters guessed
+- contact icons -> to display links to linkedIn/GitHub/potfolio/Email
+
+I also created a wireframe on Excalidraw to get an idea of the basic layout of the website.
+
+<img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="450">
 
 ### Day 2 - 23/01/2024
 
-- keyboard option in case user does not want to type
-- modal
-- CSS
+On the second day I decided to add a keyboard component to the game to optionally display buttons for guessing letters in case the user doesn't want to type on their keyboard and would rather click on different letter on the screen.
+
+<img src="./src/assets/images/keys.jpg" alt="keys" width="400">
+
+I also worked on the modal notifying the player when they win or lose and started doing some styling for the different components using SCSS.
 
 ### Day 3 - 24/01/2024
 
-- add faded effect to keys already used
-- media queries for modal
-- contact icons to link to my github, portfolio, project code, linkedin, email
+On the third day I decided continued working on the keyboard because I wanted the keys of the letters that had already been clicked to appear faded on the screen.
+
+<img src="./src/assets/images/keys_faded.jpg" alt="keys faded after clicking them" width="400">
+
+I achieved this by conditionally adding a class of 'faded' to each key, that would be added only if the letter of the key is included in the array of letters that were correct guesses or in the array of letters that were wrong guesses.
+
+```JSX
+<button className={`btn btn-letter ${(correctLetters.includes(letter.toLowerCase()) ||
+                                      wrongLetters.includes(letter.toLowerCase()))
+                                      && 'faded'}`}
+                    key={`key-${index}`}
+                    onClick={() => handleKeyClick(letter)}
+ >
+  {letter.toUpperCase()}
+</button>
+
+```
+
+I then added a different styling for the keys that have the 'faded' class in the SCSS to give them a more faded colour than the other keys.
+
+```SCSS
+ .btn-letter {
+
+    background-color: rgb(97,69,106);
+    border: 1px solid rgb(202, 171, 215);
+    color: rgb(202, 171, 215);;
+
+    &.faded {
+        border: 1px solid rgb(120, 83, 132);
+        color: rgb(120, 83, 132);
+    }
+  }
+```
+
+I also started writing media queries to make the website accessible from different devices and added the icons for my contact information linking to my:
+
+- linkedIn profile
+- email address
+- GitHub profile
+- portfolio website
+- this GitHub repository with the code for the game
+
+<img src="./src/assets/images/contactIcons.jpg" alt="contact icons">
 
 ### Day 4 - 25/01/2024
 
-- media queries
-- deployment
-- readme file
+On day 4 I finished the remaining media queries for the responsive desing and deployed the project using on Hostinger. I also started writing the readme.md file.
+
+### Day 5 - 26/01/2024
+
+On the final day working on this project I finished writing the readme.md file and decided to add different categories the user can pick from when a random word is selected. I created new files for 3 additional categories:
+
+- animals.js
+- films.js
+- cities.js
+
+In order to get information to display as a hint for each word I used chatGTP.
+(the api file I originally used (words.js) was not generated with chatGTP, it was downloaded from https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view)
 
 ## 7. <a name="challenges"></a> Challenges
 
 ## 8. <a name="wins"></a> Wins
 
 - fully responsive design
+- keyboard with fading effect
 
 ## <a name="takeaways"></a> 9. Key Learnings & Takeaways
 
 ## <a name="future-improvements"></a> 10. Future Improvements
 
-- categories for the random word
 - multi-player
 - score board
 - sound effects + animations

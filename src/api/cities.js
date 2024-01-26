@@ -113,7 +113,7 @@ export const cities = [
     },
     {
         word: "Aberdeen",
-        hint: ""
+        hint: "A a port city located in the northeast of Scotland on the coast of the North Sea and the third most populous city in the country."
     },
     {
         word: "Belfast",
