@@ -15,8 +15,7 @@
 
 ## <a name="description"></a> 1. Description
 
-<img src='./src/assets/images/startpage.jpg' alt='start page of game' width=400>
-<img src='./src/assets/images/game.jpg' alt='game' width=400>
+<img src='./src/assets/images/startpage.jpg' alt='start page of game' width=350><img src='./src/assets/images/game.jpg' alt='game' width=350>
 
 I started this project in order to refamiliarise with JavaScript and React.js after taking a break to learn some other programming languages. I wanted to build an online version of the Hangman game where the player tries to guess the letters of an unknown random word.
 
@@ -26,7 +25,7 @@ As letters in the word are guessed If a letter not in the word is guess, draw a 
 
 Each letter of the word is visually respresented with a dash when the player starts guessing which letters are in the word one at at a time.
 
-<img src='./src/assets/images/steps.jpg' alt='steps of stick figure appearing on screen'  width=500>
+<img src='./src/assets/images/steps.jpg' alt='steps of stick figure appearing on screen'  width=600>
 
 If the player guesses a letter that is part of the answer, the letter appears above the corresponding dash. If the letter is not in the answer, a new body part of the stick figure is drawn attached to a scaffold.
 
@@ -48,6 +47,38 @@ The players win when they guess the correct word. If the players get every lette
 If the host ends up drawing the entire hangman, the players lose and the game is over.
 
 The object of hangman is to guess the secret word before the stick figure is hung.
+
+Hangman is a popular word-guessing game. Here are the basic rules:
+
+1. **Objective**: One player (the host) thinks of a word, phrase, or sentence; the other players try to guess it by suggesting letters within a certain number of guesses.
+
+2. **Setup**:
+
+   - The host writes a series of blank spaces on a surface, each representing a letter in the word or phrase.
+   - The host may also provide some initial clues, such as the category of the word or phrase.
+
+3. **Gameplay**:
+
+   - Players take turns guessing letters.
+   - If a guessed letter appears in the word, the host writes it in all its correct positions.
+   - If the guessed letter does not appear in the word, the host draws one element of a hangman’s gallows and figure on a separate part of the board. This often starts with the gallows, followed by the head, body, arms, and legs of the hangman figure.
+
+4. **Rules for Guessing**:
+
+   - Players typically guess one letter at a time.
+   - If a player wants to guess the whole word or phrase, they usually do so on their turn. However, if they are wrong, it counts as a wrong guess with the usual consequences (e.g., drawing another part of the hangman).
+
+5. **Winning and Losing**:
+
+   - The guessing players win if they guess all the letters or the entire word/phrase correctly before the hangman is completely drawn.
+   - The host wins if the hangman is completed before the players can guess the word/phrase.
+
+6. **Variations**:
+   - The number of incorrect guesses allowed before the hangman is completed can vary.
+   - Some variations include additional elements like a stand or a rope in the drawing.
+   - The complexity of the words or phrases can be adjusted based on the age or skill level of the players.
+
+Hangman can be played with just a couple of people or in larger groups, making it a versatile and popular game for various settings.
 
 ## <a name="deployment-link"></a> 2. Deployment link
 
@@ -177,6 +208,7 @@ This was a solo project I built over the course of 4 days.
 ### Day 2 - 23/01/2024
 
 - keyboard option in case user does not want to type
+- modal
 - CSS
 
 ### Day 3 - 24/01/2024

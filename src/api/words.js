@@ -23,7 +23,7 @@ export const words = [
     },
     {
         word: "astronomy",
-        hint: "The faculty or phenomenon of finding valuable or agreeable things not sought for."
+        hint: "The branch of science that deals with celestial objects, space, and the physical universe as a whole."
     },
     {
         word: "football",
