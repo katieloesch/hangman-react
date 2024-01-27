@@ -4,7 +4,7 @@ import gifSad from './../../assets/gifs/sad.gif'
 import gifHappy from './../../assets/gifs/happy.gif'
 import './Modal.scss'
 
-const Modal = ({ correctLetters, wrongLetters, selectedWord, setPlayable, playAgain }) => {
+const Modal = ({ correctLetters, wrongLetters, selectedWord, setPlayable, play }) => {
   let message = '';
   let wordReveal = '';
   let gif;
@@ -40,7 +40,7 @@ const Modal = ({ correctLetters, wrongLetters, selectedWord, setPlayable, playAg
             <h2 id="message">{message}</h2>
             <img src={gif} alt={gifAlt} />
             <p id="word-reveal">{wordReveal}<span>{selectedWord}</span></p>
-            <button className="btn" id="btn-play-again" onClick={playAgain}>Play Again</button>
+            <button className="btn" id="btn-play-again" onClick={play}>Play Again</button>
         </div>
     </div>
   )

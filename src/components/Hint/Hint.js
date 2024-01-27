@@ -1,14 +1,15 @@
 import React from 'react'
-import { words } from '../../api/words'
 import './Hint.scss'
 
-const Hint = ({ showHint, setShowHint, selectedWord }) => {
-    let wordDescription = words.find((e) => (e.word === selectedWord)).hint
+const Hint = ({ showHint, setShowHint, selectedWord, list }) => {
+  console.log('WORDDDDDDDDDD')
+  console.log(selectedWord)
+    let wordDescription = list.find((e) => (e.word === selectedWord))
 
   return (
     <div className='hint'>
         { !showHint && <button className='btn' id='btn-hint' onClick={() => setShowHint(true)}>Hint</button>}
-        { showHint && <p>{wordDescription}</p> }
+        { (showHint && wordDescription) && <p>{wordDescription.hint}</p> }
     </div>
   )
 }

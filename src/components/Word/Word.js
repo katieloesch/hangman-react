@@ -4,9 +4,9 @@ import './Word.scss'
 const Word = ({ selectedWord, correctLetters }) => {
   return (
     <div className="word">
-    { selectedWord.split('').map( (letter, index) => (
+    { selectedWord && selectedWord.split('').map( (letter, index) => (
         <span className="letter" key={index}>
-              {correctLetters.includes(letter) ? letter.toUpperCase() : ''}
+              {correctLetters.includes(letter.toLowerCase()) ? letter.toUpperCase() : ''}
         </span>
     ))}
     </div>
