@@ -17,7 +17,7 @@ export const words = [ // length: 72, source: https://drive.google.com/file/d/1V
     },
     {
         word: "serendipity",
-        hint: "The scientific study of celestial objects and phenomena."
+        hint: "The occurrence of finding valuable or pleasant things that are not sought for."
     },
     {
         word: "astronomy",
@@ -33,7 +33,7 @@ export const words = [ // length: 72, source: https://drive.google.com/file/d/1V
     },
     {
         word: "butterfly",
-        hint: "An insect with colorful wings and a slender body."
+        hint: "A flying insect with large, often brightly colored wings,"
     },
     {
         word: "history",
@@ -141,11 +141,11 @@ export const words = [ // length: 72, source: https://drive.google.com/file/d/1V
     },
     {
         word: "rainforest",
-        hint: "A dense forest characterized by high rainfall and biodiversity."
+        hint: "A dense, tropical forest with high amounts of rainfall, rich biodiversity, and a complex ecosystem."
     },
     {
         word: "theater",
-        hint: "A building or outdoor area in which plays, movies, or other performances are staged."
+        hint: "A building or outdoor area in which plays, films, or other performances are staged."
     },
     {
         word: "telephone",
@@ -197,7 +197,7 @@ export const words = [ // length: 72, source: https://drive.google.com/file/d/1V
     },
     {
         word: "tropical",
-        hint: "Relating to or situated in the region between the Tropic of Cancer and the Tropic of Capricorn."
+        hint: "Warm and humid regions of the Earth, typically found near the Equator, where temperatures are consistently high throughout the year."
     },
     {
         word: "mysterious",

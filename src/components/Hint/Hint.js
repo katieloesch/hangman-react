@@ -2,8 +2,7 @@ import React from 'react'
 import './Hint.scss'
 
 const Hint = ({ showHint, setShowHint, selectedWord, list }) => {
-  console.log('WORDDDDDDDDDD')
-  console.log(selectedWord)
+
     let wordDescription = list.find((e) => (e.word === selectedWord))
 
   return (

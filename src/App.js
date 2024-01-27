@@ -34,8 +34,6 @@ function App() {
   const [list, setList] = useState(words)
 
   useEffect(() => {
-    console.log('effffffffffffffffffff')
-    console.log(playable)
     const handleKeydown = e => {
       const { key, keyCode } = e;
 
@@ -57,8 +55,6 @@ function App() {
         }
       }
     }
-
-
     
     window.addEventListener('keydown', handleKeydown);
     return () => window.removeEventListener('keydown', handleKeydown);
@@ -66,7 +62,6 @@ function App() {
   }, [correctLetters, wrongLetters, playable]);
 
   function changeWordList(category) {
-    console.log('change word list')
 
     if (category === "random") {
       setList(words)
@@ -77,8 +72,6 @@ function App() {
     } else if (category === "films") {
       setList(films)
     }
-    console.log(list)
-
   }
 
   function play() {
@@ -90,8 +83,6 @@ function App() {
     const random = Math.floor(Math.random() * list.length);
     selectedWord = list[random].word;
   }
-
-
 
   function handleKeyClick(key) {
 
@@ -120,11 +111,11 @@ function App() {
     <div className='app'>
       <Header playable={playable} />
       <div className='game-container'>
-        <Categories category={category} setCategory={setCategory} categories={categories} changeWordList={changeWordList} play={play}/>
         <Figure wrongLetters={wrongLetters} />
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
         <WrongLetters wrongLetters={wrongLetters}/>
         <Hint setShowHint={setShowHint} showHint={showHint} selectedWord={selectedWord} list={list}/>
+        <Categories category={category} setCategory={setCategory} categories={categories} changeWordList={changeWordList} play={play}/>
         <Keyboard handleKeyClick={handleKeyClick} setShowKeys={setShowKeys} showKeys={showKeys} wrongLetters={wrongLetters} correctLetters={correctLetters}/>
       </div>
       

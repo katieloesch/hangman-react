@@ -19,8 +19,8 @@ const Categories = ({ categories, category, setCategory, changeWordList, play })
     <div className='categories-container'>
   
         {!showCategories && (<div>
-            <span className='categories-label'>category: {category} </span>
-            <button onClick={() => setShowCategories(true)}>change</button>
+            <span className='categories-label'>category:&nbsp;</span><span className='category'>{category}</span>
+            <button className='btn-change-category' onClick={() => setShowCategories(true)}>change</button>
             </div>)}
     
         {showCategories && (<div>
@@ -29,9 +29,9 @@ const Categories = ({ categories, category, setCategory, changeWordList, play })
                         return (<option className='dropdown-option'  value={category} key={category}>{category}</option>)
                     })}         
                 </select>
-                <button onClick={handleApply}>apply</button>
+                <button className='btn-apply-change' onClick={handleApply}>apply</button>
             </div>)}
-            
+
     </div>
   )
 }
