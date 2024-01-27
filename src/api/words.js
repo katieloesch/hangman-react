@@ -181,7 +181,7 @@ export const words = [ // length: 72, source: https://drive.google.com/file/d/1V
     },
     {
         word: "photography",
-        hint: "The art, process, or practice of creating images by recording light or other electromagnetic radiation."
+        hint: "The art, application, and practice of creating durable images by recording light or other electromagnetic radiation."
     },
     {
         word: "safari",

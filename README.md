@@ -254,6 +254,10 @@ On the final day working on this project, I finished writing the readme.md file 
 I used chatGTP to generate information to display as a hint for each word.<br>
 (The api file I originally used (words.js) was not generated with chatGTP, it was downloaded from [codingNepal](https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view))
 
+<img src="./src/assets/images/category.jpg" alt="category display" width=200>
+<br>
+<img src="./src/assets/images/dropdown.jpg" alt="category dropdown menu" width=200>
+
 ## 7. <a name="challenges"></a> Challenges
 
 ## 8. <a name="wins"></a> Wins
