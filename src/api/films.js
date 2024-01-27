@@ -1,4 +1,4 @@
-export const films = [ //length: 60
+export const films = [ //length: 60, generated using chatGTP
     {
         word: "Alien",
         hint: "A 1979 science fiction horror film directed by Ridley Scott and starrng Sigourney Weaver and Ian Holm."

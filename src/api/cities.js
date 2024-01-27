@@ -1,4 +1,4 @@
-export const cities = [
+export const cities = [ //length: 68, generated using chatGTP
     {
         word: "Chicago",
         hint: "City located in Illinois, situated on the southwestern shore of Lake Michigan."
@@ -117,178 +117,158 @@ export const cities = [
     },
     {
         word: "Belfast",
-        hint: ""
+        hint: "The largest city of Northern Ireland and second-largest city on the island of Ireland, located on the northeastern part"
     },
     {
         word: "Cardiff",
-        hint: ""
+        hint: "Largest city of Wales, situated on the southern coast of the country, along the Bristol Channel."
     },
     {
         word: "Birmingham",
-        hint: ""
+        hint: "The second-largest city in Britain, located in the West Midlands region."
     },
     {
         word: "Leicester",
-        hint: ""
+        hint: "Located in the East Midlands region of England."
     },
     {
         word: "Nottingham",
-        hint: ""
-    },
-    {
-        word: "Portsmouth",
-        hint: ""
+        hint: "A city located in the East Midlands region of England."
     },
     {
         word: "Cambridge",
-        hint: ""
+        hint: "City located on the River Cam in the East Anglia region of England."
     },
     {
         word: "Liverpool",
-        hint: ""
-    },
-    {
-        word: "Sheffield",
-        hint: ""
+        hint: "Major port city located in the northwest of England, along the coast of the Irish Sea."
     },
     {
         word: "Hamburg",
-        hint: ""
+        hint: "A major port city situated in the northern part of Germany, on the shores of the North Sea and the Baltic Sea."
     },
     {
         word: "Frankfurt",
-        hint: ""
+        hint: "Located in west-central Germany, situated along the banks of the Main River."
     },
     {
         word: "Stuttgart",
-        hint: ""
+        hint: "A manufacturing hub and largest city of the German state of Baden-Württemberg,located in southwestern part of the country."
     },
     {
         word: "Marseille",
-        hint: ""
+        hint: "Oldest city in France and major port city, located in the southeastern part of the country on the Mediterranean coast."
     },
     {
         word: "Bordeaux",
-        hint: ""
+        hint: "A port city and famed wine-growing region on the Garonne River in southwestern France."
     },
     {
         word: "Brussels",
-        hint: ""
+        hint: "Largest city in Belgium and administrative centre of the European Union."
     },
     {
         word: "Bruges",
-        hint: ""
+        hint: "City in the northwest part of Belgium, situated in the Flanders region near the coast of the North Sea."
     },
     {
         word: "Prague",
-        hint: ""
+        hint: "Largest city of the Czech Republic an situated in the western part of the country, along the Vltava River."
     },
     {
         word: "Budapest",
-        hint: ""
+        hint: "Largest city in Hungary, situated along the banks of the Danube River."
     },
     {
         word: "Amsterdam",
-        hint: ""
+        hint: "Largest and most populated city of the Netherlands, situated in the western part of the country."
     },
     {
         word: "Stockholm",
-        hint: ""
+        hint: "Largest and most populous city of Swedenen, compassesing 14 islands and more than 50 bridges."
     },
     {
         word: "Valencia",
-        hint: ""
+        hint: "The third-most populated municipality in Spain, located on the eastern coast, along the Mediterranean Sea."
     },
     {
         word: "Belgrade",
-        hint: ""
+        hint: "Largest city of Serbia, situated at the confluence of the Sava and Danube rivers in the Balkan Peninsula."
     },
     {
         word: "Warsaw",
-        hint: ""
+        hint: "Largest city of Poland, situated in the central part of the country along the Vistula River."
     },
     {
         word: "Copenhagen",
-        hint: ""
+        hint: "Largest city of Denmark, situated on the islands of Zealand and Amager."
     },
     {
         word: "Florence",
-        hint: ""
+        hint: "Capital of Italy’s Tuscany region, situated in the northern part of central Italy, along the Arno River."
     },
     {
         word: "Bangkok",
-        hint: ""
+        hint: "Largest city of Thailand, located in the southern part of the country, along the Chao Phraya River."
     },
     {
         word: "Shenzhen",
-        hint: ""
+        hint: "Located in the southern part of China in the Guangdong Province, near the border with Hong Kong."
     },
     {
         word: "Johannesburg",
-        hint: ""
+        hint: "Largest city in South Africa, located in the northeastern part of the country in the Gauteng Province."
     },
     {
         word: "Marrakesh",
-        hint: ""
+        hint: "Located in western Morocco, near the foothills of the Atlas Mountains."
     },
     {
         word: "Melbourne",
-        hint: ""
+        hint: "The second-most populous city in Australia, on the southern coast of the continent, along the shores of Port Phillip Bay."
     },
     {
         word: "Adelaide",
-        hint: ""
+        hint: "Located on the southern coast of the Australian continent, along the eastern shores of the Gulf St Vincent."
     },
     {
         word: "Brisbane",
-        hint: ""
+        hint: "Largest city of Queensland, situated on the eastern coast of Australia, along the banks of the Brisbane River."
     },
     {
         word: "Santiago",
-        hint: ""
+        hint: "Largest city of Chile, situated in the central part of the country."
     },
     {
         word: "Medellin",
-        hint: ""
+        hint: "South American city located in the Andes Mountains in the Aburrá Valley, nicknamed 'City of Eternal Spring'."
     },
     {
         word: "Vancouver",
-        hint: ""
+        hint: "Coastal city in the province of British Columbia, situated on the west coast of Canada, along the Pacific Ocean."
     },
     {
         word: "Ottawa",
-        hint: ""
-    },
-    {
-        word: "Quebec",
-        hint: ""
+        hint: "Located in the eastern part of the Canadian province of Ontario, near the border with the province of Quebec."
     },
     {
         word: "Baltimore",
-        hint: ""
+        hint: "Located in the northeastern part of the US state of Maryland, along the shores of the Chesapeake Bay."
     },
     {
         word: "Minneapolis",
-        hint: ""
+        hint: "Largest city in the US state of Minnesota, situated near the Mississippi River."
     },
     {
         word: "Bangalore",
-        hint: ""
-    },
-    {
-        word: "Bangkok",
-        hint: ""
-    },
-    {
-        word: "Singapore",
-        hint: ""
+        hint: "Largest city of the southern Indian state of Karnataka, situated on the Deccan Plateau in the southeastern part of the state."
     },
     {
         word: "Washington",
-        hint: ""
+        hint: "Located on the eastern coast of the United States, along the Potomac River, bordering the states of Maryland and Virginia."
     },
     {
         word: "Alexandria",
-        hint: ""
+        hint: "A Mediterranean port city located on the northern coast of Egypt, along the Mediterranean Sea."
     }
 ]

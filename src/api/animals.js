@@ -1,4 +1,4 @@
-export const animals = [ //length: 52
+export const animals = [ //length: 52, generated using chatGTP
 {
     word: "elephant",
     hint: "The largest land mammal, known for its long trunk and large ears."

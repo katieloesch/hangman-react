@@ -102,11 +102,12 @@ npx create-react-app .
   - used to retrieve data for the api files (animals.js, cities.js and animals.js)
   - source for remaining api (words.js): https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view
 
-### Tutorials and resources:
+### Resources and tutorials:
 
+- List of random words (./src/api/words.js) by [codingNepal] (https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view)
 - YouTube: [Build Hangman With React](https://www.youtube.com/watch?v=jj0W8tYX_q8) by [Traversy Media](https://www.youtube.com/@TraversyMedia)
 - YouTube: [This Is A Great Beginner React/TypeScript Project](https://www.youtube.com/watch?v=-ONUyenGnWw&t=2s) by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
-- Youtube: [Build A Hangman Game in HTML CSS and JavaScript | Hangman Game in HTML CSS and JavaScript]() by [CodingNepal](https://www.youtube.com/@CodingNepal)
+- Youtube: [Build A Hangman Game in HTML CSS and JavaScript | Hangman Game in HTML CSS and JavaScript](https://www.youtube.com/watch?app=desktop&v=hSSdc8vKP1I) by [CodingNepal](https://www.youtube.com/@CodingNepal)
 
 ## <a name="deliverables"></a> 5. Deliverables
 
@@ -238,7 +239,7 @@ I also started writing media queries to make the website accessible from differe
 - portfolio website
 - this GitHub repository with the code for the game
 
-<img src="./src/assets/images/contactIcons.jpg" alt="contact icons">
+<img src="./src/assets/images/contact.jpg" alt="contact icons">
 
 ### Day 4 - 25/01/2024
 
@@ -252,8 +253,8 @@ On the final day working on this project I finished writing the readme.md file a
 - films.js
 - cities.js
 
-In order to get information to display as a hint for each word I used chatGTP.
-(the api file I originally used (words.js) was not generated with chatGTP, it was downloaded from https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view)
+In order to get information to display as a hint for each word I used chatGTP.<br>
+(The api file I originally used (words.js) was not generated with chatGTP, it was downloaded from [codingNepal] (https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view))
 
 ## 7. <a name="challenges"></a> Challenges
 

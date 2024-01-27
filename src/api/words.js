@@ -1,6 +1,4 @@
-// source: https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view
-
-export const words = [
+export const words = [ // length: 72, source: https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view
     {
         word: "guitar",
         hint: "A musical instrument with strings."

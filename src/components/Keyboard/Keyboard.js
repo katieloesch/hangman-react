@@ -24,7 +24,6 @@ const Keyboard = ({ handleKeyClick, showKeys, setShowKeys, wrongLetters, correct
     <div className='keyboard-container'>
         {!showKeys && <button className='btn' id='btn-show-keys' onClick={() => setShowKeys(true)}>Keyboard</button>}
         {showKeys && keys}
-      
     </div>
   )
 }
