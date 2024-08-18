@@ -1,6 +1,8 @@
 # Hangman in React
 
-<img src="./src/assets/images/hangman.png" alt="hangman frame" width="400">
+<img src="./src/assets/images/hangman.png" alt="hangman frame" width="420">
+
+<sub>image source: generated using OpenAI's ChatGPT (via DALL-E)</sub>
 
 ## Overview
 
@@ -19,7 +21,7 @@
 
 ## <a name="description"></a> 1. Description
 
-<img src='./src/assets/images/startpage.jpg' alt='start page of game' height=350><img src='./src/assets/images/game.jpg' alt='game' height=350>
+<img src='./src/assets/images/startpage.jpg' alt='start page of game' height=350>&nbsp;<img src='./src/assets/images/game.jpg' alt='game' height=350>
 
 I started this project to refamiliarise myself with JavaScript and React.js after taking a break to learn some other programming languages. I wanted to build an online version of the Hangman game where a player attempts to guess the letters of an unknown random word.
 Each letter of the word is visually represented by a dash when the player starts guessing which letters are in the word, one at a time. If the player guesses a letter that is part of the answer, the letter appears above the corresponding dash. If the letter is not in the answer, a new part of a stick figure appears.
@@ -137,7 +139,7 @@ npx create-react-app .
   - **Coding Nepal**
     - <sub>website: [codingnepalweb.com](https://www.codingnepalweb.com/)</sub>
     - <sub>files: [youtube url](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblN2dkhHdVRxemFLT2JSZVFIN204MTllZ0xqd3xBQ3Jtc0tsb0FNRWU5eVZyU0xfdnlkN2dfNWFoT1dfRllDY0IyLVpGcTd1bTVQVjY1MWJBMGFZWTdER1JVV1Q0WGN0S2hIdzZqa2ptQnQ3T09rN1J2NTJ0REhfNFJsTm9zUkRiRlh5bEt3djNhb0tHaUlyY2lnWQ&q=https%3A%2F%2Fcodingnepalweb.com%2Fcustom-projects%2Fhangman-game-images.zip&v=hSSdc8vKP1I)</sub>
-- **SVG**
+- **SVGs**
   - **Brad Traversy**
     - <sub>GitHub repo: https://github.com/bradtraversy/vanillawebprojects/tree/master/hangman</sub>
     - <sub>HTML: https://github.com/bradtraversy/vanillawebprojects/blob/master/hangman/index.</sub>
