@@ -173,7 +173,7 @@ npx create-react-app .
 
 - **ChatGPT4o**:
 
-  - <sub>generative AI tool used for debugging and development support</sub>
+  - <sub>generative AI tool used for debugging, development support and generating artwork for the README file.</sub>
   - <sub>homepage: https://chat.openai.com/</sub>
   - <sub>GitHub repo: https://github.com/openai</sub>
 
