@@ -1,3 +1,7 @@
+# Hangman in React
+
+<img src="./src/assets/images/hangman.png" alt="hangman frame" width="400">
+
 ## Overview
 
 1. [Description](#description)
@@ -5,7 +9,7 @@
 3. [Installation](#installation)
 4. [Technologies Used](#technologies)
 5. [Deliverables](#deliverables)
-6. [Planning/Build Process](#planning)
+6. [Planning & Build Process](#planning)
 7. [Challenges](#challenges)
 8. [Wins](#wins)
 9. [Key Learnings & Takeaways](#takeaways)
@@ -15,10 +19,10 @@
 
 ## <a name="description"></a> 1. Description
 
+<img src='./src/assets/images/startpage.jpg' alt='start page of game' height=350><img src='./src/assets/images/game.jpg' alt='game' height=350>
+
 I started this project to refamiliarise myself with JavaScript and React.js after taking a break to learn some other programming languages. I wanted to build an online version of the Hangman game where a player attempts to guess the letters of an unknown random word.
 Each letter of the word is visually represented by a dash when the player starts guessing which letters are in the word, one at a time. If the player guesses a letter that is part of the answer, the letter appears above the corresponding dash. If the letter is not in the answer, a new part of a stick figure appears.
-
-<img src='./src/assets/images/startpage.jpg' alt='start page of game' height=450> <img src='./src/assets/images/game.jpg' alt='game' height=450>
 
 For each incorrect guess, a new part of the Hangman figure, attached to a scaffold appears on the screen. The stick figure shows up in 6 different parts:
 
@@ -35,82 +39,160 @@ The game is won if all the letters of the random word are guessed correctly befo
 
 ## <a name="deployment-link"></a> 2. Deployment link
 
-http://hangman.katieloesch.co.uk
+[]()
 
 ## <a name="installation"></a> 3. Installation
 
-- package manager used: npm - v9.5.0
-  - https://www.npmjs.com/package/npm
-- to install dependencies, run:
+#### Package Manager: npm (v9.5.0)
+
+- <sub>homepage: https://www.npmjs.com/</sub>
+- <sub>GitHub repo: https://github.com/npm</sub>
+
+#### Getting Started
+
+- Ensure [Git](https://git-scm.com/) is installed on your machine.
+- Clone the repository by running this command in your terminal:
+
+```zsh
+git clone https://github.com/katieloesch/hangman-react.git
+```
+
+- Navigate to the project directory to install dependencies:
+
+```zsh
+cd hangman-react
+```
+
+### Running the Application Locally in a local development environment:
+
+**1. Install Dependencies**
+
+- Run the following command in the project’s root directory to install all necessary dependencies:
 
 ```zsh
 npm install
 ```
 
-<br>
+**2. Start the Development Server**
+
+- After installing the dependencies, start the development server with:
+
+```zsh
+npm start
+```
+
+**3. Access the Application**
+
+- The development server will start at `http://localhost:3000`.
+- By default, your web browser should automatically open and navigate to this address.
+- If it doesn’t, you can manually access the application by entering `http://localhost:3000` in any web browser.
 
 ## <a name="technologies"></a> 4. Technologies Used
 
-- This application is based in ReactJS (v18.2.0), JavaScript, JSX and SCSS.
-  - it was created using the 'create-react-app' command
-  - https://create-react-app.dev/
+### Core Technologies
+
+- **ReactJS** (v18.3.1)
+
+  - <sub>primary framework used to build the application</sub>
+  - <sub>created using the create-react-app tool</sub>
+  - <sub>React docs: https://reactjs.org/</sub>
+  - <sub>Create React App docs: https://create-react-app.dev/</sub>
+
+<br>
 
 ```zsh
 npx create-react-app .
 ```
 
-### UI
+- **SCSS**
+  - <sub>CSS preprocessor used for styling the application</sub>
+  - <sub>docs: https://sass-lang.com/guide</sub>
 
-- fonts:
-  - 'Mitr' designed by Cadson Demak
-    - source: Font Squirrel
-      - https://www.fontsquirrel.com/fonts/mitr
-    - also available from Google Fonts:
-      - https://fonts.google.com/specimen/Mitr
-    - .woff files: assets/fonts directory
-- icons:
-  - iconify
-    - https://icon-sets.iconify.design/
-  - fontawesome
-    - https://fontawesome.com/
-- gifs:
-  - [CodingNepal](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblN2dkhHdVRxemFLT2JSZVFIN204MTllZ0xqd3xBQ3Jtc0tsb0FNRWU5eVZyU0xfdnlkN2dfNWFoT1dfRllDY0IyLVpGcTd1bTVQVjY1MWJBMGFZWTdER1JVV1Q0WGN0S2hIdzZqa2ptQnQ3T09rN1J2NTJ0REhfNFJsTm9zUkRiRlh5bEt3djNhb0tHaUlyY2lnWQ&q=https%3A%2F%2Fcodingnepalweb.com%2Fcustom-projects%2Fhangman-game-images.zip&v=hSSdc8vKP1I)
-- hangman svg:
-  - https://github.com/bradtraversy/vanillawebprojects/blob/master/hangman/index.html
-  - https://github.com/bradtraversy/vanillawebprojects/blob/master/hangman/style.css
+### Key Dependencies
 
-### Additional tools used:
+- **Sass** (v1.77.8)
 
-- Git / GitHub
-  - used for version control
-  - https://git-scm.com/
-  - https://github.com/https://github.com/
-- Visual Studio Code (VSCode)
-  - code editor used for writing CSS, JSX and JavaScript
-- Google Chrome browser
-  - used for launching the website and displaying the application Google Chrome
-- Google Chrome Developer Tools: For troubleshooting and debugging
-  - https://www.google.com/intl/en_uk/chrome/
-- Hostinger: provider used to host the game online
-  - https://www.hostinger.co.uk
-- Excalidraw
-  - used for building the wireframe
-  - https://excalidraw.com/
-- chatGTP
-  - https://chat.openai.com/
-  - used to retrieve data for the api files (animals.js, cities.js and animals.js)
-  - source for remaining api (words.js): https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view
+  - <sub>CSS preprocessor used for styling the application</sub>
+  - <sub>npm: https://www.npmjs.com/package/sass</sub>
+  - <sub>GitHub repo: https://github.com/sass/dart-sass</sub>
 
-### Resources and tutorials:
+### UI and Design
 
-- List of random words (./src/api/words.js) by [codingNepal](https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view)
-- YouTube: [Build Hangman With React](https://www.youtube.com/watch?v=jj0W8tYX_q8) by [Traversy Media](https://www.youtube.com/@TraversyMedia)
-- YouTube: [This Is A Great Beginner React/TypeScript Project](https://www.youtube.com/watch?v=-ONUyenGnWw&t=2s) by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
-- Youtube: [Build A Hangman Game in HTML CSS and JavaScript | Hangman Game in HTML CSS and JavaScript](https://www.youtube.com/watch?app=desktop&v=hSSdc8vKP1I) by [CodingNepal](https://www.youtube.com/@CodingNepal)
+- **Fonts**
+  - main font: \'Mitr\', designed by Cadson Demak
+    - <sub>Font Squirrel: https://www.fontsquirrel.com/fonts/mitr</sub>
+    - <sub>Google Fonts: https://fonts.google.com/specimen/Mitr</sub>
+- **Icons**
+  - **Iconify**
+    - <sub>A free and open-source framework providing access to a vast number of icons, designed for use across various platforms and environments, including React.</sub>
+    - <sub>homepage: https://icon-sets.iconify.design/</sub>
+    - <sub>GitHub Repo: https://github.com/iconify/iconify/tree/main</sub>
+    - <sub>license: https://github.com/iconify/iconify/blob/main/license.txt</sub>
+  - **Font Awesome**
+    - <sub>A popular icon library offering a large set of scalable and customizable icons, with a free version that is open source.</sub>
+    - <sub>homepage: https://fontawesome.com/</sub>
+    - <sub>GitHub repo: https://github.com/FortAwesome/Font-Awesome</sub>
+    - <sub>license: https://fontawesome.com/license/free</sub>
+- **Gifs**
+  - **Coding Nepal**
+    - <sub>website: [codingnepalweb.com](https://www.codingnepalweb.com/)</sub>
+    - <sub>files: [youtube url](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblN2dkhHdVRxemFLT2JSZVFIN204MTllZ0xqd3xBQ3Jtc0tsb0FNRWU5eVZyU0xfdnlkN2dfNWFoT1dfRllDY0IyLVpGcTd1bTVQVjY1MWJBMGFZWTdER1JVV1Q0WGN0S2hIdzZqa2ptQnQ3T09rN1J2NTJ0REhfNFJsTm9zUkRiRlh5bEt3djNhb0tHaUlyY2lnWQ&q=https%3A%2F%2Fcodingnepalweb.com%2Fcustom-projects%2Fhangman-game-images.zip&v=hSSdc8vKP1I)</sub>
+- **SVG**
+  - **Brad Traversy**
+    - <sub>GitHub repo: https://github.com/bradtraversy/vanillawebprojects/tree/master/hangman</sub>
+    - <sub>HTML: https://github.com/bradtraversy/vanillawebprojects/blob/master/hangman/index.</sub>
+    - <sub>CSS: https://github.com/bradtraversy/vanillawebprojects/blob/master/hangman/style.css</sub>
+
+### Development Tools
+
+- **Git / GitHub**
+
+  - <sub>used for version control and collaboration</sub>
+  - <sub>Git: https://git-scm.com/</sub>
+  - <sub>GitHub: https://github.com/</sub>
+
+- **Visual Studio Code (VSCode)**
+
+  - <sub>code editor used for development</sub>
+  - <sub>homepage: https://code.visualstudio.com/</sub>
+  - <sub>GitHub repo: https://github.com/microsoft/vscode</sub>
+
+- **Google Chrome & Chrome DevTools**
+
+  - <sub>used for testing, debugging, and developing in the browser</sub>
+  - <sub>Google Chrome: https://www.google.com/chrome/</sub>
+  - <sub>Chrome DevTools: https://developer.chrome.com/docs/devtools</sub>
+
+- **Excalidraw**
+
+  - <sub>tool used to create wireframes for the application</sub>
+  - <sub>homepage: https://excalidraw.com/</sub>
+  - <sub>GitHub repo: https://github.com/excalidraw/excalidraw</sub>
+
+- **ChatGPT4o**:
+
+  - <sub>generative AI tool used for debugging and development support</sub>
+  - <sub>homepage: https://chat.openai.com/</sub>
+  - <sub>GitHub repo: https://github.com/openai</sub>
+
+- **Hostinger**:
+  - <sub>web hosting provider used to deploy the application</sub>
+  - <sub>UK homepage: https://www.hostinger.co.uk</sub>
+
+### Resources & Tutorials
+
+- **YouTube**
+  - <sub>[Build Hangman With React](https://www.youtube.com/watch?v=jj0W8tYX_q8) by [Traversy Media](https://www.youtube.com/@TraversyMedia)</sub>
+  - <sub>[This Is A Great Beginner React/TypeScript Project](https://www.youtube.com/watch?v=-ONUyenGnWw&t=2s) by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)</sub>
+  - <sub>[Build A Hangman Game in HTML CSS and JavaScript | Hangman Game in HTML CSS and JavaScript](https://www.youtube.com/watch?app=desktop&v=hSSdc8vKP1I) by [CodingNepal](https://www.youtube.com/@CodingNepal)</sub>
+- **List of random words by Coding Nepal**
+
+  - <sub>Coding Nepal website: [codingnepalweb.com](https://www.codingnepalweb.com/)</sub>
+  - <sub>list of random words: https://drive.google.com/file/d/1V3qIVPEtiJSlGEAqF_dMTF2HRGt_eq2U/view</sub>
 
 ## <a name="deliverables"></a> 5. Deliverables
 
-### MVP
+### MVP (Minimum Viable Product)
 
 - a working game hosted online
 - a git repository hosted on Github, including:
@@ -136,17 +218,13 @@ npx create-react-app .
   - include contact information -> email, GitHub, LinkedIn and other relevant links
   - have a mobile-responsive design
 
-### Stretch Goals
+### Potential Extra Features
 
 - option to display a hint about the unknown random word
 - different categories for random words for player to pick from
 - animations
 - sound effects
 - scoreboard to keep track of wins and losses
-
-## <a name="planning"></a>6. Planning / Build Process
-
-This was a solo project I built over the course of 5 days.
 
 ### User Stories
 
@@ -161,6 +239,10 @@ This was a solo project I built over the course of 5 days.
 - As a user, I should have the option to get a hint about the random word I'm trying to guess.
 - As a user, I should be able to easily find the developer's contact information including email, LinkedIn and GitHub accounts.
 - As a user, I should be able to navigate the website from any device.
+
+## <a name="planning"></a>6. Planning / Build Process
+
+This was a solo project I built over the course of 5 days.
 
 ### Day 1 - 22/01/2024
 
@@ -262,8 +344,8 @@ I used chatGTP to generate information to display as a hint for each word.<br>
 
 ## 8. <a name="wins"></a> Wins
 
-- fully responsive design
-- keyboard with fading effect
+- I aimed to complete this project within a 5-7 day window and successfully adhered to that timeline.
+- I also managed to implement a fully responsive design and a keyboard with fading effect.
 
 ## <a name="takeaways"></a> 9. Key Learnings & Takeaways
 
