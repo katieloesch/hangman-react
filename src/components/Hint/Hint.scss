@@ -1,31 +1,30 @@
 .hint {
-    
-    #btn-hint {
-        background-color: var(--bg);
-        border: 1px solid var(--primary);
-        color: var(--primary);
-        border-radius: 3px;
-        padding: 2px 10px;
-        font-size: 1.1rem;
+  #btn-hint {
+    background-color: var(--h-bg);
+    border: 1px solid var(--h-primary);
+    color: var(--primary);
+    border-radius: 3px;
+    padding: 2px 10px;
+    font-size: 1.1rem;
 
-        &:hover {
-            cursor: pointer;
-            border: 1px solid var(--white);
-            color: var(--white);
-            transition: 0.4s;
-        }
+    &:hover {
+      cursor: pointer;
+      border: 1px solid white;
+      color: white;
+      transition: 0.4s;
     }
+  }
 
-    p {
-        color: rgba(255, 255, 255, 0.75);
-        font-size: 1.3rem;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
-        padding-bottom: 10px;
+  p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    padding-bottom: 10px;
 
-        @media screen and (max-width: 400px) {
-            font-size: 1rem;
-        }
+    @media screen and (max-width: 400px) {
+      font-size: 1rem;
     }
+  }
 }

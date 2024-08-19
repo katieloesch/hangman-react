@@ -23,7 +23,7 @@
 
 <img src='./src/assets/images/startpage.jpg' alt='screenshot of start page of game' height=370>&nbsp;<img src='./src/assets/images/game.jpg' alt='screenshot of game in progress' height=370>
 
-I started this project to reacquaint myself with JavaScript and React.js after taking a break to explore other programming languages. The goal was to build an online version of the classic Hangman game, where a player attempts to guess the letters of a randomly chosen word.
+A classic game of Hangman built in React.js. I started this project to reacquaint myself with JavaScript and React.js after taking a break to explore other programming languages. The goal was to build an online version of the classic Hangman game, where a player attempts to guess the letters of a randomly chosen word.
 
 When the game begins, each letter of the word is represented by a dash. As the player guesses letters one by one, correct guesses reveal the corresponding letters above their respective dashes. Incorrect guesses result in a new part of a stick figure being drawn.
 
@@ -266,6 +266,8 @@ After removing unnecessary files from the newly created project, I created a com
 
 I also created a wireframe using [Excalidraw](https://excalidraw.com/) to visualize the basic layout of the website:
 
+<br>
+
 <img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="450">
 
 ### Day 2 - 23/01/2024
@@ -322,7 +324,7 @@ I also started writing media queries to make the website accessible on different
 
 <br>
 
-<img src="./src/assets/images/contact.jpg" alt="contact icons" width=250>
+<img src="./src/assets/images/contact_icons.png" alt="screenshot of contact icons" width=600>
 
 ### Day 4 - 25/01/2024
 

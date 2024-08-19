@@ -1,0 +1,166 @@
+.contact-link {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transition: 0.4s ease-in-out;
+
+  svg {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    color: var(--h-secondary);
+  }
+
+  /* link to project code | </> */
+  &.code-link {
+    padding-bottom: 0px;
+    padding-top: 6px;
+
+    & {
+      svg {
+        scale: 0.9;
+      }
+    }
+  }
+
+  &.code-link:hover {
+    & {
+      svg {
+        scale: 1;
+      }
+    }
+  }
+
+  /* link to portfolio */
+  &.portfolio-link {
+    padding-bottom: 0px;
+
+    & {
+      svg {
+        scale: 0.85;
+      }
+    }
+  }
+
+  &.portfolio-link:hover {
+    & {
+      svg {
+        scale: 0.95;
+      }
+    }
+  }
+
+  /* link to github profile */
+  &.github-link {
+    padding-bottom: 0px;
+    padding-top: 6px;
+
+    & {
+      svg {
+        scale: 0.85;
+      }
+    }
+  }
+
+  &.github-link:hover {
+    & {
+      svg {
+        scale: 0.95;
+      }
+    }
+  }
+
+  /* mailto link for email */
+  &.mail-link {
+    padding-bottom: 0px;
+
+    & {
+      svg {
+        scale: 1.5;
+      }
+    }
+  }
+
+  &.mail-link:hover {
+    & {
+      svg {
+        scale: 1.6;
+      }
+    }
+  }
+
+  /* link to linkedin profile | in */
+  &.linkedin-link {
+    padding-bottom: 0px;
+    padding-top: 8px;
+
+    & {
+      svg {
+        scale: 0.7;
+      }
+    }
+  }
+
+  &.linkedin-link:hover {
+    & {
+      svg {
+        scale: 0.8;
+      }
+    }
+  }
+
+  &:hover {
+    svg {
+      color: white;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 34px;
+    height: 34px;
+
+    &.mail-link {
+      padding-top: 6px;
+
+      & {
+        svg {
+          scale: 1.3;
+        }
+      }
+    }
+
+    &.mail-link:hover {
+      & {
+        svg {
+          scale: 1.4;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 34px;
+    height: 34px;
+
+    &.mail-link {
+      padding-top: 6px;
+
+      & {
+        svg {
+          scale: 1.2;
+        }
+      }
+    }
+
+    &.mail-link:hover {
+      & {
+        svg {
+          scale: 1.3;
+        }
+      }
+    }
+  }
+}

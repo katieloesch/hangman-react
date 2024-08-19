@@ -1,0 +1,30 @@
+.hangman-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    @media screen and (min-width: 1500px) {
+      gap: 2rem;
+    }
+    @media screen and (max-width: 1500px) {
+      justify-content: center;
+    }
+    @media screen and (max-width: 600px) {
+      justify-content: space-between;
+    }
+  }
+}

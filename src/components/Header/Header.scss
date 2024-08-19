@@ -1,5 +1,3 @@
-
-
 .header {
   display: flex;
   align-self: center;
@@ -16,33 +14,32 @@
   .p-instructions {
     text-align: center;
     font-size: 1.5rem;
-    color: var(--primary)
+    color: var(--h-primary);
   }
 
-    #btn-start-game {
-        background-color: var(--primary);
-        color: var(--bg);
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
-        padding: 10px 15px;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: bold;
+  #btn-start-game {
+    background-color: var(--h-primary);
+    color: var(--h-bg);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 
-        &:hover {
-            cursor: pointer;
-            scale: 1.05;
-            transition: 0.4s;
-        }
-
-        &:active {
-            transform: scale(0.98);
-        }
-        
-        &:focus {
-            outline: 0;
-        }
+    &:hover {
+      cursor: pointer;
+      scale: 1.05;
+      transition: 0.4s;
     }
-}
 
+    &:active {
+      transform: scale(0.98);
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}

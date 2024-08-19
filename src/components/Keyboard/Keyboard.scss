@@ -1,60 +1,59 @@
 .keyboard-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  max-width: 50%;
 
-    @media screen and (min-width: 1500px) {
-        max-width: 30%;
+  @media screen and (min-width: 1500px) {
+    max-width: 30%;
+  }
+  @media screen and (max-width: 800px) {
+    max-width: 80%;
+  }
+  @media screen and (max-width: 400px) {
+    max-width: 95%;
+  }
+
+  #btn-show-keys {
+    background-color: var(--h-bg);
+    border: 1px solid var(--h-primary);
+    color: var(--h-primary);
+    border-radius: 3px;
+    padding: 2px 10px;
+    font-size: 1.1em;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid white;
+      color: white;
+      transition: 0.4s;
     }
-    @media screen and (max-width: 800px) {
-        max-width: 80%;
-    }
-    @media screen and (max-width: 400px) {
-       max-width: 95%;
-    }
+  }
 
-    #btn-show-keys {
-        background-color: var(--bg);
-        border: 1px solid var(--primary);
-        color: var(--primary);
-        border-radius: 3px;
-        padding: 2px 10px;
-        font-size: 1.1em;
- 
-        &:hover {
-            cursor: pointer;
-            border: 1px solid var(--white);
-            color: var(--white);
-            transition: 0.4s;
-        }
+  .btn-letter {
+    background-color: var(--h-bg);
+    border: 1px solid var(--h-primary);
+    color: var(--h-primary);
+    padding: 0px 7px;
+    border-radius: 3px;
+    width: 1.75em;
+
+    &:hover {
+      background-color: var(--h-bg-light);
+      color: white;
+      border: 1px solid white;
+      cursor: pointer;
     }
 
-    .btn-letter {
+    &.faded {
+      border: 1px solid var(--h-bg-light);
+      color: var(--h-bg-light);
 
-        background-color: var(--bg);
-        border: 1px solid var(--primary);
-        color: var(--primary);
-        padding: 0px 7px;
-        border-radius: 3px;
-        width: 1.75em;
-
-        &:hover {
-            background-color: var(--bg-light);
-            color: var(--white);
-            border: 1px solid var(--white);
-            cursor: pointer;
-        }
-
-        &.faded {
-            border: 1px solid var(--bg-light);
-            color: var(--bg-light);
-
-            &:hover {
-                cursor: not-allowed;
-                background-color: var(--bg);
-            }
-        }
+      &:hover {
+        cursor: not-allowed;
+        background-color: var(--h-bg);
+      }
     }
+  }
 }
